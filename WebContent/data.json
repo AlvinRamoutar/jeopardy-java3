@@ -1,0 +1,266 @@
+{
+  "c1": {
+    "name": "Language of Flowers",
+    "description": "Everything has meaning,  so it makes sense that flowers have their own that commensurate their beauty. Identify this meaning.",
+    "lv1": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv2": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv3": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv4": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv5": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    }
+  },
+  "c2": {
+    "name": "Steam Library",
+    "description": "Prepare your wallets, there's a steam sale coming. Identify popular titles from the Steam Store.",
+    "lv1": {
+      "question": "What a save! What a save! What a save! Chat Disabled.",
+      "a": "I am toast",
+      "b": "Steep",
+      "c": "Fallout 4",
+      "d": "Rocket League",
+      "answer": "d"
+    },
+    "lv2": {
+      "question": "Wonder has been built in a far away land.",
+      "a": "Sid Meier's Civilization",
+      "b": "Ceasar",
+      "c": "Sim City",
+      "d": "Europa Universalis",
+      "answer": "x"
+    },
+    "lv3": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv4": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv5": {
+      "question": "de_dust",
+      "a": "Amnesia",
+      "b": "Warhammer",
+      "c": "Counter Strike",
+      "d": "XCOM",
+      "answer": "c"
+    }
+  },
+  "c3": {
+    "name": "Snip at the Tune",
+    "description": "Listen carefully. Identify the song title in which the audio snippet is taken from. ",
+    "lv1": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv2": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv3": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv4": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv5": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    }
+  },
+  "c4": {
+    "name": "Orange in Nature",
+    "description": "Orange is the superior color. Answers from this category are known to be orange.",
+    "lv1": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv2": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv3": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv4": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv5": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    }
+  },
+  "c5": {
+    "name": "Fruit of the Line",
+    "description": "These delectable phrases have one thing in common; they're comprised of a fruit! Identify the fruit that completes the phrase.",
+    "lv1": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv2": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv3": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv4": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv5": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    }
+  },
+  "c6": {
+    "name": "Not-so Pseudocode",
+    "description": "Because a Jeopardy game created by a Java Student wouldn't be the same if it didn't quiz you on your Java Literacy.",
+    "lv1": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv2": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv3": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "y"
+    },
+    "lv4": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    },
+    "lv5": {
+      "question": "question",
+      "a": "a",
+      "b": "b",
+      "c": "c",
+      "d": "d",
+      "answer": "x"
+    }
+  }
+}
