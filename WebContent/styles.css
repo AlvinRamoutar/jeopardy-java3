@@ -1,0 +1,92 @@
+@CHARSET "ISO-8859-1";
+
+html.gameScreen {
+	background-color: #150544;
+}
+
+div.question {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	color: #BF815A;
+	text-shadow: 2px 2px #000000;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+div.question:hover {
+	background: #000078;
+}
+
+div.category {
+	font-family: 'Martel', serif;
+	color: white;
+	font-weight: 900;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+div.gameFrame {
+	background-image: url("media/images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+div.playerName {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	color: #FFFFFF;
+	font-size: 2em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+div.playerData {
+	position: relative;
+	background-image: -webkit-linear-gradient(#d1d1d1 0%, #afaeae 25%, #ffffff 50%, #0f0f0f
+		55%, #4f4f4f 75%, #2d2d2d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	font-size: 2em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+div.expandedQuestion {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	color: #FFFFFF;
+	text-shadow: 2px 2px #000000;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+	font-size: 3em;
+}
+
+div.rightChoice {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+	background-color: #168243;
+	opacity: 0.8;
+	color: #BF815A;
+	text-shadow: 2px 2px #000000;
+}
+
+div.wrongChoice {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+	background-color: #961f1f;
+	opacity: 0.8;
+	color: #BF815A;
+	text-shadow: 2px 2px #000000;
+}

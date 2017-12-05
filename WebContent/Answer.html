@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Jeopardy!</title>
+<title>Answer - Jeopardy!</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
 	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -40,52 +39,23 @@
 				<div style="background-color: rgba(0, 0, 152, 0.80);"
 					class="container">
 					<div class="row">
-						<div class="col-sm category">Language of Flowers</div>
-						<div class="col-sm category">Steam Library</div>
-						<div class="col-sm category">Snippets</div>
-						<div class="col-sm category">Orange in Nature</div>
-						<div class="col-sm category">Fruit of the Line</div>
-						<div class="col-sm category">Calling</div>
+						<div class="col-sm question">
+							<div style="default;" class="row">
+								<div class="col col-md-11 text-left">CATEGORY, worth $XXX</div>
+								<div class="col col-md-1 text-right">SKIP</div>
+							</div>
+						</div>
 					</div>
 					<div class="row">
-						<div id="c1_lv1" class="col-sm question">$200</div>
-						<div id="c2_lv1" class="col-sm question">$200</div>
-						<div id="c3_lv1" class="col-sm question">$200</div>
-						<div id="c4_lv1" class="col-sm question">$200</div>
-						<div id="c5_lv1" class="col-sm question">$200</div>
-						<div id="c6_lv1" class="col-sm question">$200</div>
+						<div class="col-sm expandedQuestion">QUESTION_FRAME</div>
 					</div>
 					<div class="row">
-						<div id="c1_lv2" class="col-sm question">$400</div>
-						<div id="c2_lv2" class="col-sm question">$400</div>
-						<div id="c3_lv2" class="col-sm question">$400</div>
-						<div id="c4_lv2" class="col-sm question">$400</div>
-						<div id="c5_lv2" class="col-sm question">$400</div>
-						<div id="c6_lv2" class="col-sm question">$400</div>
+						<div id="c1_lv1" class="col-sm wrongChoice">ANSWER A</div>
+						<div id="c2_lv1" class="col-sm rightChoice">ANSWER B</div>
 					</div>
 					<div class="row">
-						<div id="c1_lv3" class="col-sm question">$600</div>
-						<div id="c2_lv3" class="col-sm question">$600</div>
-						<div id="c3_lv3" class="col-sm question">$600</div>
-						<div id="c4_lv3" class="col-sm question">$600</div>
-						<div id="c5_lv3" class="col-sm question">$600</div>
-						<div id="c6_lv3" class="col-sm question">$600</div>
-					</div>
-					<div class="row">
-						<div id="c1_lv4" class="col-sm question">$800</div>
-						<div id="c2_lv4" class="col-sm question">$800</div>
-						<div id="c3_lv4" class="col-sm question">$800</div>
-						<div id="c4_lv4" class="col-sm question">$800</div>
-						<div id="c5_lv4" class="col-sm question">$800</div>
-						<div id="c6_lv4" class="col-sm question">$800</div>
-					</div>
-					<div class="row">
-						<div id="c1_lv5" class="col-sm question">$1000</div>
-						<div id="c2_lv5" class="col-sm question">$1000</div>
-						<div id="c3_lv5" class="col-sm question">$1000</div>
-						<div id="c4_lv5" class="col-sm question">$1000</div>
-						<div id="c5_lv5" class="col-sm question">$1000</div>
-						<div id="c6_lv5" class="col-sm question">$1000</div>
+						<div id="c1_lv1" class="col-sm question">ANSWER C</div>
+						<div id="c2_lv1" class="col-sm question">ANSWER D</div>
 					</div>
 				</div>
 			</div>
@@ -123,10 +93,14 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col">
+					<br>
+
+				</div>
+			</div>
+			<div class="row"></div>
+
 		</div>
-		<div class="row"></div>
-
-	</div>
-
 </body>
 </html>
