@@ -1,93 +1,189 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	<title>Jeopardy Login</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<meta charset="ISO-8859-1">
+<title>Jeopardy Login</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+	integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	crossorigin="anonymous"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Martel:700,900" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Martel:700,900"
+	rel="stylesheet">
 </head>
 
-	<style>
-		div.question {
-			font-family: 'Martel', serif;
-			font-weight: 900;
-			color: #BF815A;
-			text-shadow: 2px 2px #000000;
-			border-style: solid;
-    		border-width: medium;
-    		border-color: black;
-		}
-		div.question:hover {
-			background: #000078;
-		}
-		div.category {
-			font-family: 'Martel', serif;
-			color: white;
-			font-weight: 900;
-    		border-style: solid;
-    		border-width: medium;
-    		border-color: black;
-		}
-	</style>
-	
-<body style="margin: 0 auto;">
-	
-	<div style="background-color:#000098; " class="container">
-      <div class="row">
-	    <div class="col-sm category">Language of Flowers</div>
-	    <div class="col-sm category">Steam Library</div>
-	    <div class="col-sm category">Snippets</div>
-   	    <div class="col-sm category">Orange in Nature</div>
-	    <div class="col-sm category">Fruit of the Line</div>
-	    <div class="col-sm category">Calling</div>
-	  </div>
-	  <div class="row">
-	    <div id="c1_lv1" class="col-sm question">$200</div>
-	    <div id="c2_lv1" class="col-sm question">$200</div>
-	    <div id="c3_lv1" class="col-sm question">$200</div>
-   	    <div id="c4_lv1" class="col-sm question">$200</div>
-	    <div id="c5_lv1" class="col-sm question">$200</div>
-	    <div id="c6_lv1" class="col-sm question">$200</div>
-	  </div>
-	  <div class="row">
-	    <div id="c1_lv2" class="col-sm question">$400</div>
-	    <div id="c2_lv2" class="col-sm question">$400</div>
-	    <div id="c3_lv2" class="col-sm question">$400</div>
-   	    <div id="c4_lv2" class="col-sm question">$400</div>
-	    <div id="c5_lv2" class="col-sm question">$400</div>
-	    <div id="c6_lv2" class="col-sm question">$400</div>
-	  </div>
-	  <div class="row">
-	    <div id="c1_lv3" class="col-sm question">$600</div>
-	    <div id="c2_lv3" class="col-sm question">$600</div>
-	    <div id="c3_lv3" class="col-sm question">$600</div>
-   	    <div id="c4_lv3" class="col-sm question">$600</div>
-	    <div id="c5_lv3" class="col-sm question">$600</div>
-	    <div id="c6_lv3" class="col-sm question">$600</div>
-	  </div>
-	  <div class="row">
-	    <div id="c1_lv4" class="col-sm question">$800</div>
-	    <div id="c2_lv4" class="col-sm question">$800</div>
-	    <div id="c3_lv4" class="col-sm question">$800</div>
-   	    <div id="c4_lv4" class="col-sm question">$800</div>
-	    <div id="c5_lv4" class="col-sm question">$800</div>
-	    <div id="c6_lv4" class="col-sm question">$800</div>
-	  </div>
-	  <div class="row">
-	    <div id="c1_lv5" class="col-sm question">$1000</div>
-	    <div id="c2_lv5"class="col-sm question">$1000</div>
-	    <div id="c3_lv5"class="col-sm question">$1000</div>
-   	    <div id="c4_lv5"class="col-sm question">$1000</div>
-	    <div id="c5_lv5"class="col-sm question">$1000</div>
-	    <div id="c6_lv5"class="col-sm question">$1000</div>
-	  </div>
-	  
+<style>
+html {
+	background-color: #150544;
+}
+
+div.question {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	color: #BF815A;
+	text-shadow: 2px 2px #000000;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+div.question:hover {
+	background: #000078;
+}
+
+div.category {
+	font-family: 'Martel', serif;
+	color: white;
+	font-weight: 900;
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+}
+
+div.gameFrame {
+	background-image: url("media/images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+div.playerName {
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	color: #FFFFFF;
+	font-size: 2em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+div.playerData {
+	position: relative;
+	background-image: -webkit-linear-gradient(#d1d1d1 0%, #afaeae 25%, #ffffff 50%, #0f0f0f
+		55%, #4f4f4f 75%, #2d2d2d 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	font-size: 2em;
+	vertical-align: middle;
+	display: inline-block;
+}
+</style>
+
+<body>
+
+	<div class="container-fluid gameFrame">
+		<div class="row">
+			<div class="col text-left playerData">NAME</div>
+			<div class="col text-center">
+				<img style="width: 60%;" src="media/images/Jeopardy-logo.png">
+			</div>
+			<div class="col text-right playerData">SCORE</div>
+		</div>
+		<div class="row"></div>
+		<div class="row">
+			<div class="col text-center">
+				<div style="background-color: rgba(0, 0, 152, 0.80);"
+					class="container">
+					<div class="row">
+						<div class="col-sm category">Language of Flowers</div>
+						<div class="col-sm category">Steam Library</div>
+						<div class="col-sm category">Snippets</div>
+						<div class="col-sm category">Orange in Nature</div>
+						<div class="col-sm category">Fruit of the Line</div>
+						<div class="col-sm category">Calling</div>
+					</div>
+					<div class="row">
+						<div id="c1_lv1" class="col-sm question">$200</div>
+						<div id="c2_lv1" class="col-sm question">$200</div>
+						<div id="c3_lv1" class="col-sm question">$200</div>
+						<div id="c4_lv1" class="col-sm question">$200</div>
+						<div id="c5_lv1" class="col-sm question">$200</div>
+						<div id="c6_lv1" class="col-sm question">$200</div>
+					</div>
+					<div class="row">
+						<div id="c1_lv2" class="col-sm question">$400</div>
+						<div id="c2_lv2" class="col-sm question">$400</div>
+						<div id="c3_lv2" class="col-sm question">$400</div>
+						<div id="c4_lv2" class="col-sm question">$400</div>
+						<div id="c5_lv2" class="col-sm question">$400</div>
+						<div id="c6_lv2" class="col-sm question">$400</div>
+					</div>
+					<div class="row">
+						<div id="c1_lv3" class="col-sm question">$600</div>
+						<div id="c2_lv3" class="col-sm question">$600</div>
+						<div id="c3_lv3" class="col-sm question">$600</div>
+						<div id="c4_lv3" class="col-sm question">$600</div>
+						<div id="c5_lv3" class="col-sm question">$600</div>
+						<div id="c6_lv3" class="col-sm question">$600</div>
+					</div>
+					<div class="row">
+						<div id="c1_lv4" class="col-sm question">$800</div>
+						<div id="c2_lv4" class="col-sm question">$800</div>
+						<div id="c3_lv4" class="col-sm question">$800</div>
+						<div id="c4_lv4" class="col-sm question">$800</div>
+						<div id="c5_lv4" class="col-sm question">$800</div>
+						<div id="c6_lv4" class="col-sm question">$800</div>
+					</div>
+					<div class="row">
+						<div id="c1_lv5" class="col-sm question">$1000</div>
+						<div id="c2_lv5" class="col-sm question">$1000</div>
+						<div id="c3_lv5" class="col-sm question">$1000</div>
+						<div id="c4_lv5" class="col-sm question">$1000</div>
+						<div id="c5_lv5" class="col-sm question">$1000</div>
+						<div id="c6_lv5" class="col-sm question">$1000</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<br>
+				<div id="accordion" role="tablist">
+					<div class="card" style="background-color: rgba(0, 0, 84, 0.3);">
+						<div class="card-header" role="tab" id="headingOne">
+							<h5 class="mb-0 text-center"
+								style="font-family: 'Martel', serif; font-weight: 900;">
+								<a data-toggle="collapse" href="#collapseOne"
+									aria-expanded="false" aria-controls="collapseOne"> NEED
+									HELP? </a>
+							</h5>
+						</div>
+
+						<div id="collapseOne" class="collapse show" role="tabpanel"
+							aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<p style="color: white;">Anim pariatur cliche reprehenderit,
+									enim eiusmod high life accusamus terry richardson ad squid. 3
+									wolf moon officia aute, non cupidatat skateboard dolor brunch.
+									Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+									tempor, sunt aliqua put a bird on it squid single-origin coffee
+									nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+									craft beer labore wes anderson cred nesciunt sapiente ea
+									proident. Ad vegan excepteur butcher vice lomo. Leggings
+									occaecat craft beer farm-to-table, raw denim aesthetic synth
+									nesciunt you probably haven't heard of them accusamus labore
+									sustainable VHS.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row"></div>
+
 	</div>
 
-	
 </body>
 </html>

@@ -48,7 +48,6 @@ public class QuestionSet {
 		} catch(JSONException jsone) {
 			throw new JeopardyException("Error when parsing 'data.json'; malformed JSON.");
 		}
-
 	}
 	
 	private static String readAll(Reader rd) throws IOException {
