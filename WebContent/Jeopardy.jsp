@@ -42,14 +42,14 @@
 			<div class="col text-center">
 				<div style="background-color: rgba(0, 0, 152, 0.80);"
 					class="container">
-					<form action="AnswerServlet">
+					<form action="QuestionPickerServlet">
 						<div class="row">
 							<div class="col-sm category">Language of Flowers</div>
 							<div class="col-sm category">Steam Library</div>
-							<div class="col-sm category">Snippets</div>
+							<div class="col-sm category">Snip at the Tune</div>
 							<div class="col-sm category">Orange in Nature</div>
 							<div class="col-sm category">Fruit of the Line</div>
-							<div class="col-sm category">Calling</div>
+							<div class="col-sm category">Not-so Pseudocode</div>
 						</div>
 						<div class="row" id="lv1">
 							<!-- 							<div id="c1_lv1" class="col-sm question"> -->
