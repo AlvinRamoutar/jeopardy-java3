@@ -15,6 +15,7 @@ import org.json.JSONObject;
 
 import ca.alvinr.jeopardy.JeopardyException;
 import ca.alvinr.jeopardy.model.JSONHandler;
+import ca.alvinr.jeopardy.model.QuestionSet;
 
 /**
  * Servlet implementation class QuestionPickedServlet
@@ -45,30 +46,24 @@ public class QuestionPickerServlet extends HttpServlet {
 		category = Integer.parseInt(cq.substring(1, 2));
 		level = Integer.parseInt(cq.substring(5, 6));
 		
-		/*
+		
 		try {
+			QuestionSet qs = QuestionSet.getInstance();
 			
-			JSONHandler jH = new JSONHandler("WebContent/data.json");
-			JSONObject qJSON = jH.getJSON();
-			
-			request.setAttribute("category", qJSON.getJSONObject("c" + category).get("name"));
+			request.setAttribute("category", qs.getCategoryName(category));
 			request.setAttribute("worth", 200 * level);
-			request.setAttribute("question", qJSON.getJSONObject("c" + category).getJSONObject("lv" + level).get("question"));
-			request.setAttribute("a", qJSON.getJSONObject("c" + category).getJSONObject("lv" + level).get("a"));
-			request.setAttribute("b", qJSON.getJSONObject("c" + category).getJSONObject("lv" + level).get("b"));
-			request.setAttribute("c", qJSON.getJSONObject("c" + category).getJSONObject("lv" + level).get("c"));
-			request.setAttribute("d", qJSON.getJSONObject("c" + category).getJSONObject("lv" + level).get("d"));
+			request.setAttribute("question", qs.getCategoryQuestion(category, level));
+			request.setAttribute("a", qs.getCategorySpecificChoice(category, level, 'a'));
+			request.setAttribute("b", qs.getCategorySpecificChoice(category, level, 'b'));
+			request.setAttribute("c", qs.getCategorySpecificChoice(category, level, 'c'));
+			request.setAttribute("d", qs.getCategorySpecificChoice(category, level, 'd'));
 
 			//PrintWriter pw = response.getWriter();
 			//pw.print("Category: " + category + ", Level: " + level);
 			 
 		} catch(JeopardyException je) {
 			
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-		*/
 			
 		RequestDispatcher rd = request.getRequestDispatcher("Answer.jsp");
 		rd.forward(request, response);
