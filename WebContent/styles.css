@@ -56,6 +56,23 @@ div.playerData {
 	display: inline-block;
 }
 
+button.questionButton {
+	background-color: Transparent;
+	width: 100%;
+	height: 100%;
+	border: none;
+	cursor: pointer;
+	font-family: 'Martel', serif;
+	font-weight: 900;
+	color: #BF815A;
+	text-shadow: 2px 2px #000000;
+}
+
+p.questionWorth {
+	float: center;
+	z-index: 10;
+}
+
 div.expandedQuestion {
 	font-family: 'Martel', serif;
 	font-weight: 900;
@@ -74,9 +91,9 @@ div.rightChoice {
 	border-width: medium;
 	border-color: black;
 	background-color: #168243;
-	opacity: 0.8;
-	color: #BF815A;
+	opacity: 0.8; color : #BF815A;
 	text-shadow: 2px 2px #000000;
+	color: #BF815A;
 }
 
 div.wrongChoice {
