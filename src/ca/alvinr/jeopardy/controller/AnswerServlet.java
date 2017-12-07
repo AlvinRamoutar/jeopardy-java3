@@ -52,7 +52,12 @@ public class AnswerServlet extends HttpServlet {
 		if (request.getParameter("chosenAnswer") != null) {
 			String chosenAnswer = request.getParameter("chosenAnswer");
 			request.setAttribute("chosenAnswer", chosenAnswer);
-
+			
+			request.setAttribute("aHighlight", " ");
+			request.setAttribute("bHighlight", " ");
+			request.setAttribute("cHighlight", " ");
+			request.setAttribute("dHighlight", " ");
+			
 			try {
 				QuestionSet qs = QuestionSet.getInstance();
 
@@ -61,12 +66,14 @@ public class AnswerServlet extends HttpServlet {
 						Integer.parseInt(session.getAttribute("chosenQuestionID").toString().substring(5, 6)));
 
 				if (!chosenAnswer.equals(rightAnswer)) {
-					request.setAttribute("incorrectAnswer", chosenAnswer);
+					//request.setAttribute("incorrectAnswer", chosenAnswer);
+					request.setAttribute(" " + chosenAnswer + "Highlight", "wrongChoice");
 				} else {
 					session.setAttribute("score", Integer.parseInt(session.getAttribute("score").toString())
 							+ (200 * Integer.parseInt(session.getAttribute("level").toString())));
 				}
-				request.setAttribute("correctAnswer", rightAnswer);
+				//request.setAttribute("correctAnswer", rightAnswer);
+				request.setAttribute(" " + chosenAnswer + "Highlight", "rightAnswer");
 				request.setAttribute("isAnswered", true);
 			} catch (Exception e) {
 				response.sendRedirect("http://example.com/EXCEPTION:" + e.getMessage());

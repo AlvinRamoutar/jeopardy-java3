@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
 <meta charset="ISO-8859-1">
@@ -95,13 +94,22 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm question ${param.aHighlight}">
+							<div class="col-sm question <jsp:">
 								<button class="question questionButton" type="submit" value="a"
 									name="chosenAnswer" 
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> > 
 									<%=session.getAttribute("a")%></button>
 							</div>
-							<div class="col-sm question ${param.bHighlight}">
+							<div class="col-sm question
+								<% if(request.getAttribute("isAnswered") != null) {
+									if(request.getAttribute("chosenAnswer").toString().equals("b")) {
+										if(request.getAttribute("correctAnswer").toString().equals("b")) {
+											out.println(" rightChoice");
+										} else {
+											out.println(" wrongChoice");
+										}
+									}
+								} %>">
 								<button class="question questionButton" type="submit" value="b"
 									name="chosenAnswer"
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
@@ -109,20 +117,27 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm question ${param.cHighlight}">
+							<div class="col-sm question 
+								<% if(request.getAttribute("isAnswered") != null) {
+									if(request.getAttribute("chosenAnswer").toString().equals("c")) {
+										if(request.getAttribute("correctAnswer").toString().equals("c")) {
+											out.println(" rightChoice");
+										} else {
+											out.println(" wrongChoice");
+										}
+									}
+								} %>">
 								<button class="question questionButton" type="submit" value="c"
 									name="chosenAnswer"
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
 									<%=session.getAttribute("c")%></button>
 							</div>
-							<c:if test="${pageContext.request.method == 'GET' }">
-							<div class="col-sm question ${param.dHighlight}">
+							<div class="col-sm question">
 								<button class="question questionButton" type="submit" value="d"
 									name="chosenAnswer"
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
 									<%=session.getAttribute("d")%></button>
 							</div>
-							</c:if>
 						</div>
 					</form>
 				</div>
