@@ -1,0 +1,266 @@
+{
+  "c1": {
+    "name": "Language of Flowers",
+    "description": "Everything has meaning, so it makes sense that flowers have their own that commensurate their beauty. Identify this meaning, based off of Victoria's Flower Dictionary.",
+    "lv1": {
+      "question": "Rose, red",
+      "a": "Retire",
+      "b": "Passion",
+      "c": "Good Relations",
+      "d": "Love",
+      "answer": "d"
+    },
+    "lv2": {
+      "question": "Basil",
+      "a": "Hatred",
+      "b": "Distrust",
+      "c": "Dishonor",
+      "d": "Oppressed",
+      "answer": "a"
+    },
+    "lv3": {
+      "question": "Daisy",
+      "a": "Innocence",
+      "b": "Purity",
+      "c": "Adorable",
+      "d": "Candid",
+      "answer": "a"
+    },
+    "lv4": {
+      "question": "Ivy",
+      "a": "Marriage",
+      "b": "Mistrust",
+      "c": "Fidelity",
+      "d": "Reconciliation",
+      "answer": "c"
+    },
+    "lv5": {
+      "question": "Lavender",
+      "a": "Etiquette",
+      "b": "Mistrust",
+      "c": "Malnourished",
+      "d": "Refined",
+      "answer": "b"
+    }
+  },
+  "c2": {
+    "name": "Steam Library",
+    "description": "Prepare your wallets, there's a steam sale coming. Identify popular titles from the Steam Store.",
+    "lv1": {
+      "question": "What a save! What a save! What a save! Chat Disabled.",
+      "a": "I am toast",
+      "b": "Steep",
+      "c": "Fallout 4",
+      "d": "Rocket League",
+      "answer": "d"
+    },
+    "lv2": {
+      "question": "Wonder has been built in a far away land.",
+      "a": "Sid Meier's Civilization",
+      "b": "Ceasar",
+      "c": "Sim City",
+      "d": "Europa Universalis",
+      "answer": "a"
+    },
+    "lv3": {
+      "question": "9 Classes, many hats.",
+      "a": "Rainbow Six Siege",
+      "b": "Team Fortress 2",
+      "c": "The Elder Scrolls Online",
+      "d": "Assassin's Creed Origins",
+      "answer": "b"
+    },
+    "lv4": {
+      "question": "DayZ without Zombies, be the lone survivor.",
+      "a": "H1Z1",
+      "b": "Desolate",
+      "c": "Counter-Strike: Global Offensive",
+      "d": "Playerunknown's Battlegrounds'",
+      "answer": "d"
+    },
+    "lv5": {
+      "question": "de_dust",
+      "a": "Amnesia",
+      "b": "Warhammer",
+      "c": "Counter Strike",
+      "d": "XCOM",
+      "answer": "c"
+    }
+  },
+  "c3": {
+    "name": "Snip at the Tune",
+    "description": "Listen carefully. Identify the song title in which the audio snippet is taken from. Genre is EDM.",
+    "lv1": {
+      "question": "Avicii_-_Without_You_ft._Sandro_Cavazza.mp3",
+      "a": "Bon Iver - Skinny Love",
+      "b": "Icona Pop - All Night",
+      "c": "Avicii - Without You ft Sandro Cavazza",
+      "d": "DJ Snake - Middle",
+      "answer": "c"
+    },
+    "lv2": {
+      "question": "Marshmello_-_Alone.mp3",
+      "a": "Ansel Elgort - Home Alone",
+      "b": "Marshmello - Alone",
+      "c": "Fever Dreams (feat. Taylor Fernandez)",
+      "d": "Machine Gun Kelly x Camila Cabello - Bad Things",
+      "answer": "b"
+    },
+    "lv3": {
+      "question": "The_Chainsmokers_&_Coldplay_-_Something_Just_Like_This.mp3",
+      "a": "Skrillex - Would You Ever",
+      "b": "David Guetta - 2U",
+      "c": "Fransis Derelle - Fly (feat. Parker Pohill)",
+      "d": "The Chainsmokers & Coldplay - Something Just Like This",
+      "answer": "d"
+    },
+    "lv4": {
+      "question": "Calvin_Harris_ft_Example_-_Well_Be_Coming_Back.mp3",
+      "a": "Calvin Harris ft. Example - We'll Be Coming Back",
+      "b": "Dougal & Gammer feat. Hannah Faulkner - Knight In Shining Armour",
+      "c": "Fall Out Boy - Alone Together",
+      "d": "Doug Bogan - Theater Kids",
+      "answer": "a"
+    },
+    "lv5": {
+      "question": "Porter_Robinson_&_Madeon_-_Shelter.mp3",
+      "a": "Eminence & RedMoon - Changes (feat. Holly Drummond)",
+      "b": "Koven - Everything",
+      "c": "Porter Robinson & Madeon - Shelter",
+      "d": "Say My Name (feat. Zyra)",
+      "answer": "c"
+    }
+  },
+  "c4": {
+    "name": "Orange in Nature",
+    "description": "Orange is the superior color. Answers from this category are known to be orange.",
+    "lv1": {
+      "question": "fall-1072821_1280.jpg",
+      "a": "Fall Leaves",
+      "b": "Sunset",
+      "c": "Tree Bark",
+      "d": "Flowers",
+      "answer": "a"
+    },
+    "lv2": {
+      "question": "clown-2311538_1280.jpg",
+      "a": "Goldfish",
+      "b": "Clownfish",
+      "c": "Salmon",
+      "d": "Orangefish",
+      "answer": "b"
+    },
+    "lv3": {
+      "question": "marigold-2666877_1280.jpg",
+      "a": "Daisy",
+      "b": "Hydrangea",
+      "c": "Peony",
+      "d": "Marigold",
+      "answer": "d"
+    },
+    "lv4": {
+      "question": "fruit-1534487_1280.jpg",
+      "a": "Clementine",
+      "b": "Starfruit",
+      "c": "Grape",
+      "d": "Kumquat",
+      "answer": "d"
+    },
+    "lv5": {
+      "question": "chinese-17422_1280.jpg",
+      "a": "Origami",
+      "b": "Paper Balloons",
+      "c": "Paper Lanterns",
+      "d": "Kites",
+      "answer": "c"
+    }
+  },
+  "c5": {
+    "name": "Fruit of the Line",
+    "description": "These delectable phrases have one thing in common; they're comprised of a fruit! Identify the fruit that completes the phrase.",
+    "lv1": {
+      "question": "____ of your eye.",
+      "a": "Gold",
+      "b": "Apple",
+      "c": "Lemon",
+      "d": "Starfruit",
+      "answer": "b"
+    },
+    "lv2": {
+      "question": "Pretty pretty please, with a ______ on top.",
+      "a": "Cherry",
+      "b": "Plum",
+      "c": "Pineapple",
+      "d": "Cabbage",
+      "answer": "a"
+    },
+    "lv3": {
+      "question": "Everything's _______ 'n' cream",
+      "a": "Pines",
+      "b": "Peaches",
+      "c": "Apricots",
+      "d": "Blueberries",
+      "answer": "b"
+    },
+    "lv4": {
+      "question": "Make like a ______ and split",
+      "a": "Cherry",
+      "b": "Walnut",
+      "c": "Banana",
+      "d": "Tangerine",
+      "answer": "c"
+    },
+    "lv5": {
+      "question": "When life gives you ______, make ????????.",
+      "a": "Nectarines",
+      "b": "Sapodilla",
+      "c": "Lemons",
+      "d": "Limes",
+      "answer": "c"
+    }
+  },
+  "c6": {
+    "name": "Not-so Pseudocode",
+    "description": "Because a Jeopardy game created by a Java Student wouldn't be the same if it didn't quiz you on your Java Literacy.",
+    "lv1": {
+      "question": "Order the primitives from smallest in size, to largest: byte, long, int, short",
+      "a": "short, byte, int, long",
+      "b": "int, long, short, byte",
+      "c": "byte, short, int, long",
+      "d": "int, byte, short, long",
+      "answer": "c"
+    },
+    "lv2": {
+      "question": "Errors that happen while a program is running are referred to as:",
+      "a": "Compilation",
+      "b": "Runtime",
+      "c": "Logic",
+      "d": "Error",
+      "answer": "b"
+    },
+    "lv3": {
+      "question": "Overriding methods in java is a Bad Practice",
+      "a": "Don't. It is bad practice.",
+      "b": "Use the @Override annotation",
+      "c": "Comment the reason why above the method",
+      "d": "Use the @Overriden annotation",
+      "answer": "b"
+    },
+    "lv4": {
+      "question": "The 'for' statement in java has what structure in parenthesis?",
+      "a": "initialization, termination, increment",
+      "b": "variable, truth statement, ++",
+      "c": "termination, increment, initialization",
+      "d": "truth statement, ++, variable",
+      "answer": "a"
+    },
+    "lv5": {
+      "question": "Which of the following is a Java Keyword?",
+      "a": "array",
+      "b": "method",
+      "c": "subclass",
+      "d": "native",
+      "answer": "d"
+    }
+  }
+}

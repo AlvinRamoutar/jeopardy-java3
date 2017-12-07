@@ -12,7 +12,8 @@ public class QuestionSet {
 	private static JSONHandler jsonHandler;
 
 	private QuestionSet() throws JeopardyException {
-		jsonHandler = new JSONHandler("WebContent/data.json");
+		//jsonHandler = new JSONHandler("WebContent/data.json");
+		jsonHandler = new JSONHandler(this.getClass().getResource("data.json"));
 		qJSON = jsonHandler.getJSON();
 	}
 

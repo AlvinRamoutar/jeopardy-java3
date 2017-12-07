@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -19,6 +21,16 @@ public class JSONHandler {
 	
 	public JSONHandler(String URI) throws JeopardyException {
 		File qFile = new File(URI);
+		qJSON = readDataJSON(qFile);
+	}
+	
+	public JSONHandler(URL url) throws JeopardyException {
+		File qFile = null;
+		try {
+			qFile = new File(url.toURI().getPath());
+		} catch (URISyntaxException e) {
+			throw new JeopardyException("Error when trying to find 'data.json' relative to JSONHandler.class");
+		}
 		qJSON = readDataJSON(qFile);
 	}
 	

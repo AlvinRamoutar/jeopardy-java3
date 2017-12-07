@@ -46,6 +46,8 @@ public class QuestionPickerServlet extends HttpServlet {
 		category = Integer.parseInt(cq.substring(1, 2));
 		level = Integer.parseInt(cq.substring(5, 6));
 		
+		PrintWriter pw = response.getWriter();
+		pw.println("hey im alive");
 		
 		try {
 			QuestionSet qs = QuestionSet.getInstance();
@@ -58,12 +60,7 @@ public class QuestionPickerServlet extends HttpServlet {
 			request.setAttribute("c", qs.getCategorySpecificChoice(category, level, 'c'));
 			request.setAttribute("d", qs.getCategorySpecificChoice(category, level, 'd'));
 
-			//PrintWriter pw = response.getWriter();
-			//pw.print("Category: " + category + ", Level: " + level);
-			 
-		} catch(JeopardyException je) {
-			
-		}
+		} catch(Exception e) {	pw.println(e.getMessage()); } 
 			
 		RequestDispatcher rd = request.getRequestDispatcher("Answer.jsp");
 		rd.forward(request, response);
