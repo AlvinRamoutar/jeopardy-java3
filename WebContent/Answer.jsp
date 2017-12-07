@@ -57,39 +57,56 @@
 			<div class="col text-center">
 				<div style="background-color: rgba(0, 0, 152, 0.80);"
 					class="container">
-					<div class="row">
-						<div class="col-sm question">
-							<div style="" class="row">
-								<div class="col col-md-11 text-left"><%=request.getAttribute("category")%>,
-									worth $<%=request.getAttribute("worth")%></div>
-								<div class="col col-md-1 text-right">SKIP</div>
+					<form action="AnswerServlet">
+						<div class="row">
+							<div class="col-sm question">
+								<div style="" class="row">
+									<div class="col col-md-11 text-left"><%=request.getAttribute("category")%>,
+										worth $<%=request.getAttribute("worth")%></div>
+									<div class="col col-md-1 text-right">
+										<button class="question questionButton" type="submit"
+											value="skip" name="skip">SKIP</button>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm expandedQuestion" align="center">
-							<%
-								String q = request.getAttribute("question").toString();
+						<div class="row">
+							<div class="col-sm expandedQuestion" align="center">
+								<%
+									String q = request.getAttribute("question").toString();
 
-								if (q.matches(".*.mp3")) {
-									out.println("<audio width='75%' type='audio/mp3' class='mejs_player' src='media/snipAtTheTune/" + q
-											+ "'/></audio>");
-								} else if (q.matches(".*.jpg|.*.png")) {
-									out.println("<img src='media/orangeInNature/" + q + "' width='100%'>");
-								} else {
-									out.println(q);
-								}
-							%>
+									if (q.matches(".*.mp3")) {
+										out.println("<audio width='75%' type='audio/mp3' class='mejs_player' src='media/snipAtTheTune/" + q
+												+ "'/></audio>");
+									} else if (q.matches(".*.jpg|.*.png")) {
+										out.println("<img src='media/orangeInNature/" + q + "' width='100%'>");
+									} else {
+										out.println(q);
+									}
+								%>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div id="c1_lv1" class="col-sm wrongChoice"><%=request.getAttribute("a")%></div>
-						<div id="c2_lv1" class="col-sm rightChoice"><%=request.getAttribute("b")%></div>
-					</div>
-					<div class="row">
-						<div id="c1_lv1" class="col-sm question"><%=request.getAttribute("c")%></div>
-						<div id="c2_lv1" class="col-sm question"><%=request.getAttribute("d")%></div>
-					</div>
+						<div class="row">
+							<div class="col-sm question">
+								<button class="question questionButton" type="submit" value="a"
+									name="chosenAnswer"><%=request.getAttribute("a")%></button>
+							</div>
+							<div class="col-sm question">
+								<button class="question questionButton" type="submit" value="b"
+									name="chosenAnswer"><%=request.getAttribute("b")%></button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm question">
+								<button class="question questionButton" type="submit" value="c"
+									name="chosenAnswer"><%=request.getAttribute("c")%></button>
+							</div>
+							<div class="col-sm question">
+								<button class="question questionButton" type="submit" value="d"
+									name="chosenAnswer"><%=request.getAttribute("d")%></button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
