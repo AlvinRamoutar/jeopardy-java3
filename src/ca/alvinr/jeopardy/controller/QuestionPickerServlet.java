@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -39,28 +40,30 @@ public class QuestionPickerServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(-1);
+		
 		String cq = request.getParameter("chosenQuestion");
+		session.setAttribute("chosenQuestionID", cq);
 
 		int category;
 		int level;
 		category = Integer.parseInt(cq.substring(1, 2));
 		level = Integer.parseInt(cq.substring(5, 6));
 		
-		PrintWriter pw = response.getWriter();
-		pw.println("hey im alive");
-		
 		try {
 			QuestionSet qs = QuestionSet.getInstance();
 			
-			request.setAttribute("category", qs.getCategoryName(category));
-			request.setAttribute("worth", 200 * level);
-			request.setAttribute("question", qs.getCategoryQuestion(category, level));
-			request.setAttribute("a", qs.getCategorySpecificChoice(category, level, 'a'));
-			request.setAttribute("b", qs.getCategorySpecificChoice(category, level, 'b'));
-			request.setAttribute("c", qs.getCategorySpecificChoice(category, level, 'c'));
-			request.setAttribute("d", qs.getCategorySpecificChoice(category, level, 'd'));
+			session.setAttribute("category", qs.getCategoryName(category));
+			session.setAttribute("level", level);
+			session.setAttribute("worth", 200 * level);
+			session.setAttribute("question", qs.getCategoryQuestion(category, level));
+			session.setAttribute("a", qs.getCategorySpecificChoice(category, level, 'a'));
+			session.setAttribute("b", qs.getCategorySpecificChoice(category, level, 'b'));
+			session.setAttribute("c", qs.getCategorySpecificChoice(category, level, 'c'));
+			session.setAttribute("d", qs.getCategorySpecificChoice(category, level, 'd'));
 
-		} catch(Exception e) {	pw.println(e.getMessage()); } 
+		} catch(Exception e) {} 
 			
 		RequestDispatcher rd = request.getRequestDispatcher("Answer.jsp");
 		rd.forward(request, response);

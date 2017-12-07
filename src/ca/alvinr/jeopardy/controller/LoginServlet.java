@@ -32,6 +32,7 @@ public class LoginServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(-1);
 		session.setAttribute("username", request.getParameter("username"));
 
 		if (request.getAttribute("isExisting") == null || request.getParameter("isReset") != null) {

@@ -61,11 +61,18 @@
 						<div class="row">
 							<div class="col-sm question">
 								<div style="" class="row">
-									<div class="col col-md-11 text-left"><%=request.getAttribute("category")%>,
-										worth $<%=request.getAttribute("worth")%></div>
+									<div class="col col-md-9 text-left"><%=session.getAttribute("category")%>,
+										worth $<%=session.getAttribute("worth")%></div>
 									<div class="col col-md-1 text-right">
 										<button class="question questionButton" type="submit"
 											value="skip" name="skip">SKIP</button>
+									</div>
+									<div class="col col-md-2 text-right">
+											<%
+												if (request.getAttribute("isAnswered") != null) {
+													out.println("<button class='question questionButton' onclick=\"location.href = 'Jeopardy.jsp';\">CONTINUE</button>");
+												}
+											%>
 									</div>
 								</div>
 							</div>
@@ -73,7 +80,7 @@
 						<div class="row">
 							<div class="col-sm expandedQuestion" align="center">
 								<%
-									String q = request.getAttribute("question").toString();
+									String q = session.getAttribute("question").toString();
 
 									if (q.matches(".*.mp3")) {
 										out.println("<audio width='75%' type='audio/mp3' class='mejs_player' src='media/snipAtTheTune/" + q
@@ -89,21 +96,29 @@
 						<div class="row">
 							<div class="col-sm question">
 								<button class="question questionButton" type="submit" value="a"
-									name="chosenAnswer"><%=request.getAttribute("a")%></button>
+									name="chosenAnswer" 
+									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> > 
+									<%=session.getAttribute("a")%></button>
 							</div>
 							<div class="col-sm question">
 								<button class="question questionButton" type="submit" value="b"
-									name="chosenAnswer"><%=request.getAttribute("b")%></button>
+									name="chosenAnswer"
+									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
+									<%=session.getAttribute("b")%></button>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm question">
 								<button class="question questionButton" type="submit" value="c"
-									name="chosenAnswer"><%=request.getAttribute("c")%></button>
+									name="chosenAnswer"
+									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
+									<%=session.getAttribute("c")%></button>
 							</div>
 							<div class="col-sm question">
 								<button class="question questionButton" type="submit" value="d"
-									name="chosenAnswer"><%=request.getAttribute("d")%></button>
+									name="chosenAnswer"
+									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
+									<%=session.getAttribute("d")%></button>
 							</div>
 						</div>
 					</form>
