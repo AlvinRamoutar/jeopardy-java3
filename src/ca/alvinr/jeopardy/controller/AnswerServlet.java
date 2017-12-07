@@ -2,6 +2,7 @@ package ca.alvinr.jeopardy.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -38,8 +39,13 @@ public class AnswerServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setMaxInactiveInterval(-1);
 
+		@SuppressWarnings("unchecked")
+		ArrayList<String> questionsTackled = (ArrayList<String>) session.getAttribute("questionsTackled");
+
 		if (request.getParameter("skip") != null) {
 			response.sendRedirect("Jeopardy.jsp");
+			questionsTackled.add(session.getAttribute("chosenQuestionID").toString());
+			session.setAttribute("questionsTackled", questionsTackled);
 			return;
 		}
 
@@ -65,11 +71,14 @@ public class AnswerServlet extends HttpServlet {
 				response.sendRedirect("http://example.com/EXCEPTION:" + e.getMessage());
 				return;
 			}
-			
+
+			questionsTackled.add(session.getAttribute("chosenQuestionID").toString());
+			session.setAttribute("questionsTackled", questionsTackled);
+
 			RequestDispatcher rd = request.getRequestDispatcher("Answer.jsp");
 			rd.forward(request, response);
 		}
-		
+
 		response.sendRedirect("Jeopardy.jsp");
 	}
 
