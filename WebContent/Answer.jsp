@@ -94,13 +94,31 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm question">
+							<div class="col-sm question 
+								<% if(request.getAttribute("isAnswered") != null) {
+									if(request.getAttribute("chosenAnswer").toString().equals("a")) {
+										if(request.getAttribute("correctAnswer").toString().equals("a")) {
+											out.println(" rightChoice");
+										} else {
+											out.println(" wrongChoice");
+										}
+									}
+								} %>">
 								<button class="question questionButton" type="submit" value="a"
 									name="chosenAnswer" 
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> > 
 									<%=session.getAttribute("a")%></button>
 							</div>
-							<div class="col-sm question">
+							<div class="col-sm question
+								<% if(request.getAttribute("isAnswered") != null) {
+									if(request.getAttribute("chosenAnswer").toString().equals("b")) {
+										if(request.getAttribute("correctAnswer").toString().equals("b")) {
+											out.println(" rightChoice");
+										} else {
+											out.println(" wrongChoice");
+										}
+									}
+								} %>">
 								<button class="question questionButton" type="submit" value="b"
 									name="chosenAnswer"
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
@@ -108,13 +126,31 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm question">
+							<div class="col-sm question 
+								<% if(request.getAttribute("isAnswered") != null) {
+									if(request.getAttribute("chosenAnswer").toString().equals("c")) {
+										if(request.getAttribute("correctAnswer").toString().equals("c")) {
+											out.println(" rightChoice");
+										} else {
+											out.println(" wrongChoice");
+										}
+									}
+								} %>">
 								<button class="question questionButton" type="submit" value="c"
 									name="chosenAnswer"
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >
 									<%=session.getAttribute("c")%></button>
 							</div>
-							<div class="col-sm question">
+							<div class="col-sm question
+								<% if(request.getAttribute("isAnswered") != null) {
+									if(request.getAttribute("chosenAnswer").toString().equals("d")) {
+										if(request.getAttribute("correctAnswer").toString().equals("d")) {
+											out.println(" rightChoice");
+										} else {
+											out.println(" wrongChoice");
+										}
+									}
+								} %>">
 								<button class="question questionButton" type="submit" value="d"
 									name="chosenAnswer"
 									<% if(request.getAttribute("isAnswered") != null) { out.println("disabled"); } %> >

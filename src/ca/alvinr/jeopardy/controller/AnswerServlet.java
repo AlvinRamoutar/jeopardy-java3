@@ -51,6 +51,7 @@ public class AnswerServlet extends HttpServlet {
 
 		if (request.getParameter("chosenAnswer") != null) {
 			String chosenAnswer = request.getParameter("chosenAnswer");
+			request.setAttribute("chosenAnswer", chosenAnswer);
 
 			try {
 				QuestionSet qs = QuestionSet.getInstance();
